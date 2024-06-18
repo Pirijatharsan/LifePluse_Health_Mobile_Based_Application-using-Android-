@@ -296,11 +296,13 @@ public class Database extends SQLiteOpenHelper {
         values.put(COLUMN_PHONE, phone);
         values.put(COLUMN_FEE, fee);
         db.insert(TABLE_DOCTORS, null, values);
+        db.close();
     }
 
     public Cursor getDoctorsByCategory(String category) {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.query(TABLE_DOCTORS, null, COLUMN_CATEGORY + "=?", new String[]{category}, null, null, null);
+
     }
 
 
@@ -314,7 +316,7 @@ public class Database extends SQLiteOpenHelper {
                 } while (c.moveToNext());
             }
         } finally {
-            db.close();
+
         }
 
         return arr;

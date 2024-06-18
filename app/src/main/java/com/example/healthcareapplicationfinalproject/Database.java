@@ -53,8 +53,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL(CREATE_DOCTORS_TABLE);
 
 
-
-
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -63,6 +61,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS BloodRequest");
         db.execSQL("DROP TABLE IF EXISTS DocterAppoinment");
         db.execSQL("DROP TABLE IF EXISTS orderPlace");
+//        db.execSQL("DROP TABLE IF EXISTS TABLE_DOCTORS");
     }
 
     public boolean register(String username,String email,String password){

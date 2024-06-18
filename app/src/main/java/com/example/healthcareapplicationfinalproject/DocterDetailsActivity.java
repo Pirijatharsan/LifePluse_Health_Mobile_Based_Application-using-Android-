@@ -17,49 +17,6 @@ import java.util.HashMap;
 
 
 public class DocterDetailsActivity extends AppCompatActivity {
-//    private String[][] docterDetails1 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails2 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails3 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails4 = {
-//            {"Kamalakananan", "Jaffna", "5years", "123456789", "600"},
-//            {"Asan", "Colombo", "15years", "123456789", "600"},
-//            {"Kusan", "Marudana", "8years", "123456789", "400"},
-//            {"Kamala", "Galle", "6years", "123456789", "700"},
-//            {"kananan", "Kandy", "9years", "123456789", "300"}
-//    };
-//    private String[][] docterDetails5 = {
-//            {"Kamalakananan", "Jaffna", "5years", "123456789", "600"},
-//            {"Asan", "Colombo", "15years", "123456789", "600"},
-//            {"Kusan", "Marudana", "8years", "123456789", "400"},
-//            {"Kamala", "Galle", "6years", "123456789", "700"},
-//            {"kananan", "Kandy", "9years", "123456789", "300"}
-//    };
-//    private String[][] docterDetails6 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//
 
     TextView tv;
     Button backBtn;

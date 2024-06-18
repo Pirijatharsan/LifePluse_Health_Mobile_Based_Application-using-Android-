@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class BloodDonation extends AppCompatActivity {
 
     EditText edusername,edbloodtype,edgender,ednearhospital,ednumber;
-    Button submit;
+    Button submit,back;
     Database database;
     private Spinner spinnerBloodType;
 
@@ -30,6 +30,7 @@ public class BloodDonation extends AppCompatActivity {
         ednearhospital=findViewById(R.id.editTextNearHospital);
         ednumber=findViewById(R.id.editTextNumber);
         submit=findViewById(R.id.ButtonForRequest);
+        back=findViewById(R.id.ButtonForRequestBack);
         spinnerBloodType = findViewById(R.id.spinnerBlood);
 
         database = new Database(this);
@@ -51,6 +52,13 @@ public class BloodDonation extends AppCompatActivity {
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
                 // Handle no selection
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(BloodDonation.this,DashboardActivity.class));
             }
         });
 

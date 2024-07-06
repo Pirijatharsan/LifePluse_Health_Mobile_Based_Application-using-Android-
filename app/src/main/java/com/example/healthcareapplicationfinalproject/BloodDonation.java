@@ -25,7 +25,6 @@ public class BloodDonation extends AppCompatActivity {
         setContentView(R.layout.activity_blood_donation2);
 
         edusername=findViewById(R.id.editTextUsername);
-//        edbloodtype=findViewById(R.id.editTextBloodType);
         edgender=findViewById(R.id.editTextGender);
         ednearhospital=findViewById(R.id.editTextNearHospital);
         ednumber=findViewById(R.id.editTextNumber);

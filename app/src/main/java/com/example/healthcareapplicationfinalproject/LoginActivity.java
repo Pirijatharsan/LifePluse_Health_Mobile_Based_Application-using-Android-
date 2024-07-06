@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         edUserName = findViewById(R.id.editTextRegUsername);
         edPassword = findViewById(R.id.editTextRegConPassword);
         logBtn = findViewById(R.id.ButtonForRegister);
-        tv = findViewById(R.id.textforLogin);
+        tv = findViewById(R.id.text_for_login);
         resetPassword = findViewById(R.id.resetPassword);
 
         database =new Database(this);

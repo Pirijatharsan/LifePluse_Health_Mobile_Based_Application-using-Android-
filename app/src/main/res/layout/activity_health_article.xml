@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
 
     tools:context=".LabTestActivity">
+
+
     <View
         android:id="@+id/topView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:layout_height="150dp"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-48dp" />
-
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -25,7 +26,7 @@
         android:layout_marginBottom="44dp"
         android:text="@string/lifePluse"
         android:textColor="#fff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/topView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,9 +41,9 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="12dp"
         android:layout_marginTop="20dp"
-        android:text="Health Articles"
+        android:text="@string/health_articles_"
         android:textColor="@color/colorRed"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"

@@ -80,7 +80,7 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        CardView findDocter = findViewById(R.id.dasFindDocter);
+        CardView findDocter = findViewById(R.id.dasFindDoctor);
         findDocter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,7 +96,7 @@ public class DashboardActivity extends AppCompatActivity {
             }
         });
 
-        CardView LabTest = findViewById(R.id.LabTestPackege);
+        CardView LabTest = findViewById(R.id.LabTestPackage);
         LabTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

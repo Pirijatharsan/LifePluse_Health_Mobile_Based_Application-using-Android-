@@ -8,8 +8,8 @@
     <View
         android:id="@+id/topView1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:layout_height="150dp"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="12dp"
         android:layout_marginTop="80dp"
-        android:text="Blood Request Details"
+        android:text="@string/blood_request_details_"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -32,8 +32,8 @@
 
     <ListView
         android:id="@+id/listViewRequestBlood"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="371dp"
+        android:layout_height="429dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -43,17 +43,29 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btnBaclRequestBlood"
+        android:id="@+id/btnBackRequestBlood"
         android:layout_width="200sp"
         android:layout_height="60sp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="60dp"
         android:background="@drawable/btn1"
-        android:text="Back"
+        android:text="@string/back3"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewRequestBlood"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteRequestBlood"
+        android:layout_width="200sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn1"
+        android:text="Delete Details"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

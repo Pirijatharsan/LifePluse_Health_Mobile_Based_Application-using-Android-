@@ -33,7 +33,7 @@ public class SensorPage implements SensorEventListener {
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        float threshold = 30;
+        float threshold = 45;
         float temperatureValue = event.values[0];
         if (temperatureValue > threshold && !isRunning) {
             isRunning = true;

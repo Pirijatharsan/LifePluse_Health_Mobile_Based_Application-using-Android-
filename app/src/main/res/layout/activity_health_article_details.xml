@@ -12,7 +12,8 @@
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/backgrounddesign"/>
+        android:background="@drawable/background_design"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -23,7 +24,7 @@
         android:layout_marginTop="116dp"
         android:text="@string/lifePluse"
         android:textColor="#fff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/topView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +37,7 @@
         android:id="@+id/textViewHATitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="dentitt"
+        android:text="@string/Dentist"
         android:textColor="@color/colorRed"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -52,7 +53,8 @@
         android:src="@drawable/walking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewHATitle"
+        android:contentDescription="@string/todo_" />
 
     <Button
         android:id="@+id/ButtonBackHAD"

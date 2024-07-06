@@ -27,7 +27,7 @@ public class LabTestDetailsActivity extends AppCompatActivity {
 
         tvPackageName = findViewById(R.id.textViewLDPackageName);
         tvTotalCost = findViewById(R.id.textViewLDTotalCost);
-        edTvPackageDetails = findViewById(R.id.editTextLDMulitline);
+        edTvPackageDetails = findViewById(R.id.editTextLDMultiline);
         btnBack = findViewById(R.id.buttonLDLabBack);
         btnAddCart = findViewById(R.id.buttonLDGoToCart);
         database = new Database(this);

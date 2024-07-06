@@ -10,7 +10,7 @@
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@drawable/backgrounddesign" />
+        android:background="@drawable/background_design" />
 
 
     <TextView
@@ -58,6 +58,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/FamilyPhysician"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/familyphysicion"></ImageView>
 
@@ -66,8 +67,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/FamilyPhysician"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -89,6 +90,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/Dentist"
                     android:layout_gravity="center_horizontal"
                     android:background="@drawable/dentis"></ImageView>
 
@@ -97,8 +99,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/Dentist"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -121,6 +123,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/Surgeon"
                     android:background="@drawable/surgeon"></ImageView>
 
                 <TextView
@@ -128,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/Surgeon"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -152,6 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/Dietician"
                     android:background="@drawable/dietician"></ImageView>
 
                 <TextView
@@ -159,7 +163,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/Dietician"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -183,6 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/Cardiologists"
                     android:background="@drawable/cardiologists"></ImageView>
 
                 <TextView
@@ -190,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/Cardiologists"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -214,6 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/neurologist"
                     android:background="@drawable/neurology"></ImageView>
 
                 <TextView
@@ -221,7 +227,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/neurologist"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"></TextView>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

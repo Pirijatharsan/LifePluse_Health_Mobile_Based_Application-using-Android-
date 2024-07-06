@@ -15,52 +15,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-// hello for  tesing
 
 public class DocterDetailsActivity extends AppCompatActivity {
-//    private String[][] docterDetails1 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails2 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails3 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//    private String[][] docterDetails4 = {
-//            {"Kamalakananan", "Jaffna", "5years", "123456789", "600"},
-//            {"Asan", "Colombo", "15years", "123456789", "600"},
-//            {"Kusan", "Marudana", "8years", "123456789", "400"},
-//            {"Kamala", "Galle", "6years", "123456789", "700"},
-//            {"kananan", "Kandy", "9years", "123456789", "300"}
-//    };
-//    private String[][] docterDetails5 = {
-//            {"Kamalakananan", "Jaffna", "5years", "123456789", "600"},
-//            {"Asan", "Colombo", "15years", "123456789", "600"},
-//            {"Kusan", "Marudana", "8years", "123456789", "400"},
-//            {"Kamala", "Galle", "6years", "123456789", "700"},
-//            {"kananan", "Kandy", "9years", "123456789", "300"}
-//    };
-//    private String[][] docterDetails6 = {
-//            {"Kamalakananan", "Jaffna", "5years", "0762777739", "600"},
-//            {"Asan", "Colombo", "15years", "0762777739", "600"},
-//            {"Kusan", "Marudana", "8years", "0762777739", "400"},
-//            {"Kamala", "Galle", "6years", "0762777739", "700"},
-//            {"kananan", "Kandy", "9years", "0762777739", "300"}
-//    };
-//
+
 
     TextView tv;
     Button backBtn;
@@ -84,19 +41,6 @@ public class DocterDetailsActivity extends AppCompatActivity {
         String title = it.getStringExtra("title");
         tv.setText(title);
 
-//
-//        if (title.compareTo("Family Doctor") == 0)
-//            docter_details = docterDetails1;
-//        else if (title.compareTo("Dentist") == 0)
-//            docter_details = docterDetails2;
-//        else if (title.compareTo("Surgeon") == 0)
-//            docter_details = docterDetails3;
-//        else if (title.compareTo("Cardiologist") == 0)
-//            docter_details = docterDetails4;
-//        else if (title.compareTo("Dietician") == 0)
-//            docter_details = docterDetails5;
-//        else if (title.compareTo("Neurologist") == 0)
-//            docter_details = docterDetails6;
 
 
         backBtn = findViewById(R.id.buttonDDBack);
@@ -107,16 +51,8 @@ public class DocterDetailsActivity extends AppCompatActivity {
             }
         });
 
-//        list = new ArrayList();
-//        for (int i=0; i<docter_details.length;i++){
-//            item =new HashMap<String,String>();
-//            item.put("line1",docter_details[i][0]);
-//            item.put("line2",docter_details[i][1]);
-//            item.put("line3",docter_details[i][2]);
-//            item.put("line4",docter_details[i][3]);
-//            item.put("line5",docter_details[i][4]+"/-");
-//            list.add(item);
-//        }
+
+
         lst = new ArrayList<>();
         Cursor cursor = db.getDoctorsByCategory(title);
         if (cursor.moveToFirst()) {

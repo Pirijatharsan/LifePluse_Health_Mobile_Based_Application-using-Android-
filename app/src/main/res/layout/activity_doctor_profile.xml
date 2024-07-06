@@ -11,7 +11,7 @@
         android:id="@+id/topView1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="@drawable/backgrounddesign"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
 
@@ -144,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextExp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextExp"
+        tools:ignore="TextFields" />
 
 
     <EditText
@@ -193,6 +194,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonForRequest" />
 

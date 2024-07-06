@@ -18,7 +18,7 @@ public class RequestBloodActivity extends AppCompatActivity {
     ArrayList<HashMap<String, String>> list;
     SimpleAdapter sa;
     ListView lst;
-    Button btnBack;
+    Button btnBack,deleteBtn;
     Database database;
 
     @Override
@@ -27,15 +27,26 @@ public class RequestBloodActivity extends AppCompatActivity {
         setContentView(R.layout.activity_request_blood);
 
         // Initialize UI components
-        btnBack = findViewById(R.id.btnBaclRequestBlood);
+        btnBack = findViewById(R.id.btnBackRequestBlood);
+        deleteBtn = findViewById(R.id.btnDeleteRequestBlood);
         lst = findViewById(R.id.listViewRequestBlood);
+
         database = new Database(this);
+
+
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                database.deleteAllBloodRequests();
+                startActivity(new Intent(RequestBloodActivity.this, OrderDetailsActivity.class));
+            }
+        });
 
         // Set up back button click listener
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RequestBloodActivity.this, DashboardActivity.class));
+                startActivity(new Intent(RequestBloodActivity.this, OrderDetailsActivity.class));
             }
         });
 

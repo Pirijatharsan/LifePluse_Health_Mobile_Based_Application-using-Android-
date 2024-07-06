@@ -8,7 +8,7 @@
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"/>
+        android:background="@drawable/background_design"/>
 
 
     <Button
@@ -21,14 +21,14 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="81dp"
         android:layout_marginEnd="41dp"
-        android:background="@drawable/callingbtndesign"
+        android:background="@drawable/calling_btn_design"
         android:drawableEnd="@drawable/calling"
         android:drawablePadding="6dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="@string/Call"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -43,10 +43,10 @@
         android:layout_marginTop="-41dp"
         android:layout_marginRight="20dp"
         android:columnCount="2"
-        android:rowCount="3 "
+        android:rowCount="3"
         android:padding="10dp">
         <androidx.cardview.widget.CardView
-            android:id="@+id/LabTestPackege"
+            android:id="@+id/LabTestPackage"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:elevation="12dp"
@@ -60,20 +60,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/lab_test"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/lab"></ImageView>
+                    android:background="@drawable/lab" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/lab_test"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -91,24 +93,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/order_details"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/border"></ImageView>
+                    android:background="@drawable/border" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/order_details"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:id="@+id/dasFindDocter"
+            android:id="@+id/dasFindDoctor"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:elevation="12dp"
@@ -122,20 +126,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/find_doctor"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/finddocter"></ImageView>
+                    android:background="@drawable/find_doctor" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/find_doctor"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -153,20 +159,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/health_tips"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/healthtips"></ImageView>
+                    android:background="@drawable/health_tips" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/health_tips"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -184,20 +192,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/blood_type"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/blooddonation"></ImageView>
+                    android:background="@drawable/blood_donation" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/request_blood"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -215,20 +225,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                >
+                tools:ignore="UseCompoundDrawables">
+
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/logout"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/logout"></ImageView>
+                    android:background="@drawable/logout" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/logout"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

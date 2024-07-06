@@ -10,11 +10,11 @@
     <View
         android:id="@+id/topView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:layout_height="150dp"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-48dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -61,7 +61,8 @@
         android:paddingEnd="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextRegEmail"
@@ -80,7 +81,8 @@
         android:paddingEnd="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextRegConPassword"
@@ -100,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRegPassword"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextRegPassword"
@@ -120,7 +123,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRegEmail"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/ButtonForRegister"
@@ -136,7 +140,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextRegConPassword" />
 
     <TextView
-        android:id="@+id/textforLogin"
+        android:id="@+id/text_for_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

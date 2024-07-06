@@ -263,6 +263,19 @@ public class Database extends SQLiteOpenHelper {
         return arr;
     }
 
+    public boolean removeBloodRequest(String username) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int result = db.delete("BloodRequest", "username=?", new String[]{username});
+
+        return result > 0;
+    }
+    public void deleteAllBloodRequests() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("BloodRequest", null, null);
+        db.close();
+    }
+
+
     /// Docter Appoiment
 
     public boolean BookAppoinment(String type,String name,String Address, String Number,String Amount,String Date,String Time){
@@ -322,10 +335,10 @@ public class Database extends SQLiteOpenHelper {
         return arr;
     }
 
-
-
-
-
-
+    public void deleteAllAppoinments() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("DocterAppoinment", null, null);
+        db.close();
+    }
 
 }

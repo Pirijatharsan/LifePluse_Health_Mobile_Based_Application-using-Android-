@@ -11,7 +11,7 @@
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -60,7 +60,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editTextRegConPassword"
@@ -81,7 +82,8 @@
         app:layout_constraintHorizontal_bias="0.733"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextRegUsername"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/ButtonForRegister"
@@ -98,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextRegConPassword" />
 
     <TextView
-        android:id="@+id/textforLogin"
+        android:id="@+id/text_for_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

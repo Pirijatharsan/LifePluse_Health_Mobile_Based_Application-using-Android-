@@ -129,6 +129,30 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="back1">BACK</string>
+    <string name="health_articles_">Health Articles</string>
+    <string name="todo_">TODO</string>
+    <string name="lab_order_details_">Lab Order Details</string>
+    <string name="order_details_">Order Details</string>
+    <string name="back_">Back</string>
+    <string name="address_">Address</string>
+    <string name="fill_deatils_for_lab_booking_">Fill Deatils for Lab booking</string>
+    <string name="full_name_">Full Name</string>
+    <string name="contact_number_">Contact Number</string>
+    <string name="pin_code_">Pin Code</string>
+    <string name="book_">Book</string>
+    <string name="back2">BACK</string>
+    <string name="todo__">TODO</string>
+    <string name="_todo">TODO</string>
+    <string name="todo___">TODO</string>
+    <string name="todo____">TODO</string>
+    <string name="todo_____">TODO</string>
+    <string name="doctor_updated_">Doctor updated</string>
+    <string name="__todo">TODO</string>
+    <string name="user_details_">User Details</string>
+    <string name="__back">Back</string>
+    <string name="blood_request_details_">Blood Request Details</string>
+    <string name="back3">Back</string>
 
 
     <string-array name="doctor_categories">

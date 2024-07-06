@@ -10,7 +10,8 @@
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/backgrounddesign"/>
+        android:background="@drawable/background_design"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/default_title"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/topView"
         app:layout_constraintEnd_toEndOf="parent"

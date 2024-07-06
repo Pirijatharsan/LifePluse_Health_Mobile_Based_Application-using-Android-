@@ -26,7 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         edPassword = findViewById(R.id.editTextRegPassword);
         edConPassword = findViewById(R.id.editTextRegConPassword);
         regBtn = findViewById(R.id.ButtonForRegister);
-        tv = findViewById(R.id.textforLogin);
+        tv = findViewById(R.id.text_for_login);
         database =new Database(this);
 
 

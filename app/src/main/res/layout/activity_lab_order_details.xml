@@ -9,7 +9,8 @@
         android:id="@+id/topView1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign" />
+        android:background="@drawable/background_design"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -18,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="12dp"
         android:layout_marginTop="80dp"
-        android:text="Lab Order Details"
+        android:text="@string/lab_order_details_"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -36,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="12dp"
         android:layout_marginTop="12dp"
-        android:text="  Order Details"
+        android:text="@string/order_details_"
         android:textColor="@color/colorRed"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -64,7 +65,7 @@
         android:layout_height="60sp"
         android:layout_marginTop="28dp"
         android:background="@drawable/btn1"
-        android:text="Back"
+        android:text="@string/back_"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

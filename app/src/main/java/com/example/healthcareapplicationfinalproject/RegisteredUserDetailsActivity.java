@@ -35,7 +35,7 @@ public class RegisteredUserDetailsActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisteredUserDetailsActivity.this, DashboardActivity.class));
+                startActivity(new Intent(RegisteredUserDetailsActivity.this, OrderDetailsActivity.class));
             }
         });
 

@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".LabTestDetailsActivity"
    >
-
     <View
         android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:background="@drawable/backgrounddesign"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
 
@@ -24,7 +23,7 @@
         android:layout_marginTop="80dp"
         android:text="@string/lifePluse"
         android:textColor="#fff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/topView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +41,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/Package_name"
         android:textColor="@color/colorRed"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -50,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/topView" />
 
     <EditText
-        android:id="@+id/editTextLDMulitline"
+        android:id="@+id/editTextLDMultiline"
         android:layout_width="271dp"
         android:layout_height="276dp"
         android:layout_margin="10dp"
@@ -64,7 +63,8 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewLDPackageName"
-        tools:ignore="MissingConstraints"></EditText>
+        tools:ignore="LabelFor,MissingConstraints"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewLDTotalCost"
@@ -75,13 +75,13 @@
         android:layout_marginTop="32dp"
         android:text="@string/total_cost"
         android:textColor="@color/coLorBLack"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonLDGoToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLDMulitline"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLDMultiline"
         app:layout_constraintVertical_bias="0.764" />
 
     <Button

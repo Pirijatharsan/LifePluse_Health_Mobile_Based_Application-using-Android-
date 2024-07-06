@@ -6,24 +6,12 @@
     tools:context=".DashboardActivity">
 
 
-    <!--    <Button-->
-<!--        android:id="@+id/OrderBack"-->
-<!--        android:layout_width="250dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:layout_below="@+id/gridLayout"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:layout_marginEnd="78dp"-->
-<!--        android:background="@drawable/btn1"-->
-<!--        android:text="@string/back"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="18dp"/>-->
 
     <View
         android:id="@+id/topView1"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="@drawable/backgrounddesign" />
+        android:background="@drawable/background_design" />
 
     <TextView
         android:id="@+id/order"
@@ -37,7 +25,7 @@
         android:layout_marginEnd="74dp"
         android:text="@string/details_of_orders"
         android:textColor="@color/white"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:textStyle="italic" />
 
     <GridLayout
@@ -67,21 +55,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/user"></ImageView>
+                    android:background="@drawable/user"
+                    android:contentDescription="@string/todo__" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/registered_user"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -100,21 +90,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/appointment"></ImageView>
+                    android:background="@drawable/appointment"
+                    android:contentDescription="@string/_todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/appointment"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -133,21 +125,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/finddocter"></ImageView>
+                    android:background="@drawable/find_doctor"
+                    android:contentDescription="@string/todo___" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/request_blood"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -166,21 +160,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/healthtips"></ImageView>
+                    android:background="@drawable/health_tips"
+                    android:contentDescription="@string/todo____" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/lab_test"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -199,21 +195,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/docter1"></ImageView>
+                    android:background="@drawable/docter1"
+                    android:contentDescription="@string/todo_____" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Doctor updated"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:text="@string/doctor_updated_"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -232,43 +230,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/logout"></ImageView>
+                    android:background="@drawable/logout"
+                    android:contentDescription="@string/__todo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/back"
-                    android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
 
     </GridLayout>
 
-    <!--    <TextView-->
-<!--        android:id="@+id/location"-->
-<!--        android:layout_width="188dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentTop="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginStart="104dp"-->
-<!--        android:layout_marginTop="33dp"-->
-<!--        android:layout_marginEnd="120dp"-->
-<!--        android:gravity="center"-->
-<!--        android:padding="1dp"-->
-<!--        android:text="@string/lifePluse"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="30sp"-->
-<!--        android:textStyle="bold" />-->
+
 
 </RelativeLayout>

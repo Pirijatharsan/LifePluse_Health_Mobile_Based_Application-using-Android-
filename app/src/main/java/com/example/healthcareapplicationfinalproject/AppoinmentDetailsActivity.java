@@ -18,7 +18,7 @@ public class AppoinmentDetailsActivity extends AppCompatActivity {
     ArrayList<HashMap<String, String>> list;
     SimpleAdapter sa;
     ListView lst;
-    Button btnBack;
+    Button btnBack,deleteBtnAppoinment;
     Database database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +27,25 @@ public class AppoinmentDetailsActivity extends AppCompatActivity {
 
         // Initialize UI components
         btnBack = findViewById(R.id.btnBackAppointmentDetails);
+        deleteBtnAppoinment = findViewById(R.id.btnDeleteDoctorAppointment);
         lst = findViewById(R.id.listViewAppointmentDetails);
+
         database = new Database(this);
+
+        deleteBtnAppoinment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                database.deleteAllAppoinments();
+                startActivity(new Intent(AppoinmentDetailsActivity.this, OrderDetailsActivity.class));
+
+            }
+        });
 
         // Set up back button click listener
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AppoinmentDetailsActivity.this, DashboardActivity.class));
+                startActivity(new Intent(AppoinmentDetailsActivity.this, OrderDetailsActivity.class));
             }
         });
 

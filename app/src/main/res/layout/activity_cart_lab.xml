@@ -8,11 +8,11 @@
     <View
         android:id="@+id/topView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:layout_height="150sp"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-48dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_marginBottom="36dp"
         android:text="@string/lifePluse"
         android:textColor="#fff"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/topView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
         android:layout_marginTop="12dp"
         android:text="@string/select_package"
         android:textColor="@color/colorRed"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
@@ -73,7 +73,7 @@
         android:layout_marginTop="52dp"
         android:text="@string/total_costs"
         android:textColor="@color/bLack"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -135,12 +135,12 @@
         android:id="@+id/buttonCartCheckOut"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/btn1"
         android:text="@string/checkout"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCartDatePicker" />
 
@@ -148,12 +148,12 @@
         android:id="@+id/buttonCartBack"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/btn1"
         android:text="@string/back"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonCartTimePicker" />
 

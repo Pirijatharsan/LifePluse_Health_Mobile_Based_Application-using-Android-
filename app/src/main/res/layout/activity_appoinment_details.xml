@@ -9,7 +9,7 @@
         android:id="@+id/topView1"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/backgrounddesign"
+        android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -32,8 +32,8 @@
 
     <ListView
         android:id="@+id/listViewAppointmentDetails"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="352dp"
+        android:layout_height="417dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
@@ -44,16 +44,28 @@
 
     <Button
         android:id="@+id/btnBackAppointmentDetails"
-        android:layout_width="200sp"
+        android:layout_width="190sp"
         android:layout_height="60sp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/btn1"
         android:text="@string/back"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewAppointmentDetails"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteDoctorAppointment"
+        android:layout_width="190sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/btn1"
+        android:text="Delete Appointment"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

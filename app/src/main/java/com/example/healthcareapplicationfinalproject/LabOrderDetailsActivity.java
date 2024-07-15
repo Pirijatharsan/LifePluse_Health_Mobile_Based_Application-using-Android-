@@ -21,7 +21,7 @@ public class LabOrderDetailsActivity extends AppCompatActivity {
     ArrayList list;
     SimpleAdapter sa;
     ListView lst;
-    Button btnBack;
+    Button btnBack,deleteBtn;
 
     Database database;
     @Override
@@ -31,13 +31,22 @@ public class LabOrderDetailsActivity extends AppCompatActivity {
 
 
         btnBack =findViewById(R.id.btnBackUserDetails);
+        deleteBtn = findViewById(R.id.btnDeleteLab);
         lst = findViewById(R.id.listViewUserDetails);
         database = new Database(this);
+
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                database.deleteAllLab();
+                startActivity(new Intent(LabOrderDetailsActivity.this, OrderDetailsActivity.class));
+            }
+        });
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabOrderDetailsActivity.this, DashboardActivity.class));
+                startActivity(new Intent(LabOrderDetailsActivity.this, OrderDetailsActivity.class));
             }
         });
 

@@ -226,6 +226,12 @@ public class Database extends SQLiteOpenHelper {
         db.close();
     }
 
+    public void deleteAllLab() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("orderplace", null, null);
+        db.close();
+    }
+
 
     // Blood Request
 
@@ -263,12 +269,12 @@ public class Database extends SQLiteOpenHelper {
         return arr;
     }
 
-    public boolean removeBloodRequest(String username) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        int result = db.delete("BloodRequest", "username=?", new String[]{username});
-
-        return result > 0;
-    }
+//    public boolean removeBloodRequest(String username) {
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        int result = db.delete("BloodRequest", "username=?", new String[]{username});
+//
+//        return result > 0;
+//    }
     public void deleteAllBloodRequests() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete("BloodRequest", null, null);

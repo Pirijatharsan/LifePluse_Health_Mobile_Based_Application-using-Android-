@@ -8,7 +8,7 @@
     <View
         android:id="@+id/topView1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:background="@drawable/background_design"
         tools:ignore="MissingConstraints" />
 
@@ -48,8 +48,8 @@
 
     <ListView
         android:id="@+id/listViewUserDetails"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="349dp"
+        android:layout_height="422dp"
         android:layout_margin="10dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -57,20 +57,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewOrderDeatils"
-        tools:ignore="MissingConstraints"/>
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnBackUserDetails"
-        android:layout_width="200sp"
+        android:layout_width="180sp"
         android:layout_height="60sp"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/btn1"
         android:text="@string/back_"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewUserDetails"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDeleteLab"
+        android:layout_width="180sp"
+        android:layout_height="60sp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn1"
+        android:text="Delete Package"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
